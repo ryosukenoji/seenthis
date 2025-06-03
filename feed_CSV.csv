@@ -1,7 +1,7 @@
 id,title,description,link,image_link,availability,price,brand,condition
-12345,売り切れ,最新CPU搭載の高性能ノートPCです。,https://example.com/product/12345,https://example.com/images/12345.jpg,in stock,1200 JPY,ExampleBrand,new
+12345,高性能ノートPC,最新CPU搭載の高性能ノートPCです。,https://example.com/product/12345,https://example.com/images/12345.jpg,in stock,1200 JPY,ExampleBrand,new
 12346,満員御礼,高精度センサー搭載ゲーミングマウス,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,4000 JPY,GameBrand,new
 12346,なし,高画質モニター,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,6000 JPY,GameBrand,new
 12345,テスト,最新CPU搭載の高性能ノートPCです。,https://example.com/product/12345,https://example.com/images/12345.jpg,in stock,120000 JPY,ExampleBrand,new
-12346,AAA,高精度センサー搭載ゲーミングマウス,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,4000 JPY,GameBrand,new
-12346,売り切れ,高画質モニター,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,6000 JPY,GameBrand,new
+12346,高性能ノートPC,高精度センサー搭載ゲーミングマウス,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,4000 JPY,GameBrand,new
+12346,ノート,高画質モニター,https://example.com/product/12346,https://example.com/images/12346.jpg,in stock,6000 JPY,GameBrand,new
