@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Example Store</title>
+    <link>https://example.com</link>
+    <description>Example Storeの商品一覧</description>
+    <item>
+      <g:id>12345</g:id>
+      <g:title>高性能ノートPC</g:title>
+      <g:description>最新CPU搭載の高性能ノートPCです。</g:description>
+      <g:link>https://example.com/product/12345</g:link>
+      <g:image_link>https://example.com/images/12345.jpg</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>12 JPY</g:price>
+      <g:brand>ExampleBrand</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+        <item>
+      <g:id>12345</g:id>
+      <g:title>高性能ノート</g:title>
+      <g:description>最新CPU搭載の高性能ノートPCです。</g:description>
+      <g:link>https://example.com/product/12345</g:link>
+      <g:image_link>https://example.com/images/12345.jpg</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>15 JPY</g:price>
+      <g:brand>ExampleBrand</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+    <item>
+      <g:id>12345</g:id>
+      <g:title>高ノートPC</g:title>
+      <g:description>最新CPU搭載の高性能ノートPCです。</g:description>
+      <g:link>https://example.com/product/12345</g:link>
+      <g:image_link>https://example.com/images/12345.jpg</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>120000 JPY</g:price>
+      <g:brand>ExampleBrand</g:brand>
+      <g:condition>new</g:condition>
+    </item>
+
+  </channel>
+</rss>

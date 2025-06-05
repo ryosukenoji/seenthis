@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>商品一覧</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .product { border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; border-radius: 8px; }
+    .product img { max-width: 150px; }
+    .title { font-weight: bold; font-size: 1.2em; }
+    .price { color: green; }
+  </style>
+</head>
+<body>
+
+<h1>商品一覧</h1>
+<div id="product-list">読み込み中...</div>
+
+<script>
+  // あなたの Google スプレッドシートの「CSV出力用URL」に差し替えてください
+  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWUdKTHzxUAAxu066S4J44eGZyjRIC8dERncJOor-4mpA9WCLOuwXvu9LufDCSKDfcDb0FNIQrhExJ/pub?gid=0&single=true&output=csv";
+
+  fetch(csvUrl)
+    .then(response => response.text())
+    .then(data => {
+      const rows = data.trim().split("\n").map(row => row.split(","));
+      const headers = rows[0]; // 1行目はヘッダー
+      const items = rows.slice(1); // 2行目以降がデータ
+      console.log(items)
+      const list = document.getElementById("product-list");
+      list.innerHTML = "";
+
+      items.forEach(row => {
+        const product = {};
+        headers.forEach((key, i) => {
+          product[key.trim()] = row[i] ? row[i].trim() : "";
+        });
+
+        const div = document.createElement("div");
+        div.className = "product";
+        div.innerHTML = `
+          <a href="${product.link}" target="_blank">
+            <img src="${product.image_link}" alt="${product.title}">
+          </a>
+          <div class="title">${product.title}</div>
+          <div class="price">${product.price}</div>
+          <div class="description">${product.description}</div>
+        `;
+        list.appendChild(div);
+      });
+    })
+    .catch(error => {
+      document.getElementById("product-list").innerText = "読み込みエラー: " + error;
+    });
+</script>
+
+</body>
+</html>
